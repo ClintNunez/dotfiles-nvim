@@ -56,18 +56,18 @@ bufferline.setup({
             fg = '#FFd17f',
         },
         error = {
-            fg = '#C53B3A',
+            fg = '#CE5A59',
             bg = '#333C47'
         },
         error_selected = {
-            fg = '#C53B3A',
+            fg = '#CE5A59',
         },
         error_diagnostic = {
-            fg = '#C53B3A',
+            fg = '#CE5A59',
             bg = '#333C47'
         },
         error_diagnostic_selected = {
-            fg = '#C53B3A',
+            fg = '#CE5A59',
         },
         modified = {
             fg = '#657b83',
