@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/clint/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/clint/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/clint/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -114,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/clint/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/clint/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/clint/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -139,16 +149,21 @@ _G.packer_plugins = {
     path = "/home/clint/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  oceanic_material = {
-    config = { "\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme oceanic_material\bcmd\bvim\0" },
+  ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/clint/.local/share/nvim/site/pack/packer/start/oceanic_material",
-    url = "https://github.com/glepnir/oceanic-material"
+    path = "/home/clint/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/clint/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["pink-moon"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme pink-moon\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/clint/.local/share/nvim/site/pack/packer/start/pink-moon",
+    url = "https://github.com/sts10/vim-pink-moon"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -173,10 +188,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: oceanic_material
-time([[Config for oceanic_material]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme oceanic_material\bcmd\bvim\0", "config", "oceanic_material")
-time([[Config for oceanic_material]], false)
+-- Config for: pink-moon
+time([[Config for pink-moon]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme pink-moon\bcmd\bvim\0", "config", "pink-moon")
+time([[Config for pink-moon]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
