@@ -1,6 +1,3 @@
--- Leader
-vim.g.mapleader = " "
-
 -- Left Bar
 vim.opt.nu = true
 vim.opt.relativenumber = true
