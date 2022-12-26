@@ -65,4 +65,10 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- Color Highlights
+    use 'norcalli/nvim-colorizer.lua'
+
+    -- Git stuff(?)
+    use 'lewis6991/gitsigns.nvim'
+
 end)
