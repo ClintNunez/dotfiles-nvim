@@ -12,7 +12,7 @@ vim.keymap.set("n", "-", "<C-x>")
 vim.keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- New tab (bufferline)
-vim.keymap.set("n", "te", ":tabedit")
+vim.keymap.set("n", "<S-t>", ":tabedit")
 
 -- Switching tabs (bufferline)
 vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
@@ -23,10 +23,10 @@ vim.keymap.set("n", "ss", ":split<Return><C-w>w")
 vim.keymap.set("n", "sv", ":vsplit<Return><C-w>w")
 
 -- Move to other window
-vim.keymap.set("", "sh", "<C-w>h")
-vim.keymap.set("", "sk", "<C-w>k")
-vim.keymap.set("", "sj", "<C-w>j")
-vim.keymap.set("", "sl", "<C-w>l")
+vim.keymap.set("", "mh", "<C-w>h")
+vim.keymap.set("", "mk", "<C-w>k")
+vim.keymap.set("", "mj", "<C-w>j")
+vim.keymap.set("", "ml", "<C-w>l")
 
 -- Resize window
 vim.keymap.set("n", "<C-w>h", "<C-w><")
