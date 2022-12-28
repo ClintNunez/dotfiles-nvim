@@ -62,3 +62,12 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+vim.diagnostic.config({
+    virtual_text = true,
+    sign = true,
+    update_in_insert = true,
+    underline = true,
+    severity_sort = false,
+    float = false,
+})
