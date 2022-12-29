@@ -20,7 +20,7 @@ vim.opt.errorbells = false
 -- Undo
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = "~/.vim/undodir"
+vim.opt.backupskip = { '/tmp/*', '/private/tmp/*' }
 vim.opt.undofile = true
 
 -- Scrolling
