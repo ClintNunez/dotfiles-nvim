@@ -42,6 +42,9 @@ return require('packer').startup(function(use)
         requires = 'nvim-tree/nvim-web-devicons'
     }
 
+    -- Autopairs
+    use 'windwp/nvim-autopairs'
+
     -- LSP
     use {
         'VonHeikemen/lsp-zero.nvim',
