@@ -23,16 +23,16 @@ vim.keymap.set("n", "ss", ":split<Return><C-w>w")
 vim.keymap.set("n", "sv", ":vsplit<Return><C-w>w")
 
 -- Move to other window
-vim.keymap.set("", "mh", "<C-w>h")
-vim.keymap.set("", "mk", "<C-w>k")
-vim.keymap.set("", "mj", "<C-w>j")
-vim.keymap.set("", "ml", "<C-w>l")
+vim.keymap.set("", "sh", "<C-w>h")
+vim.keymap.set("", "sk", "<C-w>k")
+vim.keymap.set("", "sj", "<C-w>j")
+vim.keymap.set("", "sl", "<C-w>l")
 
 -- Resize window
-vim.keymap.set("n", "<C-w>h", "<C-w><")
-vim.keymap.set("n", "<C-w>l", "<C-w>>")
-vim.keymap.set("n", "<C-w>k", "<C-w>+")
-vim.keymap.set("n", "<C-w>j", "<C-w>-")
+vim.keymap.set("n", "<C-s>h", "<C-w><")
+vim.keymap.set("n", "<C-s>l", "<C-w>>")
+vim.keymap.set("n", "<C-s>k", "<C-w>+")
+vim.keymap.set("n", "<C-s>j", "<C-w>-")
 
 -- Moves blocks of code in Visual Mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
