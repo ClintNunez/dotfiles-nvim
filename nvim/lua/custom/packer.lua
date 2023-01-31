@@ -68,6 +68,12 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- Flutter tools
+    use {
+        'akinsho/flutter-tools.nvim',
+        requires = 'nvim-lua/plenary.nvim'
+    }
+
     -- Color Highlights
     use 'norcalli/nvim-colorizer.lua'
 
