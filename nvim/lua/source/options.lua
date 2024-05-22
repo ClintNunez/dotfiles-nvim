@@ -17,6 +17,9 @@ vim.opt.incsearch = true
 -- Error
 vim.opt.errorbells = false
 
+-- Files
+vim.opt.autoread = true
+
 -- Undo
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -28,9 +31,12 @@ vim.opt.wrap = false
 vim.opt.scrolloff = 12
 vim.opt.sidescrolloff = 8
 
--- Color
------For oceanic-material
-vim.opt.background = "dark"
+-- Theme
 vim.opt.termguicolors = true
+vim.g.background = dark
+
+vim.opt.mousemoveevent = true
 
 vim.opt.updatetime = 50
+
+vim.o.showmode = false
