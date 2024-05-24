@@ -26,7 +26,15 @@ require('lspconfig').lua_ls.setup ({
     }
 })
 
-require('lspconfig').pylsp.setup({})
+require('lspconfig').pylsp.setup({
+    settings = {
+        python = {
+            pythonPath="/usr/bin/python3"
+        },
+        pylsp = {}
+    }
+
+})
 
 -- SNIPPETS
 require("luasnip.loaders.from_vscode").lazy_load()
