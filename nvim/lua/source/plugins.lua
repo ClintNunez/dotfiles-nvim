@@ -1,5 +1,5 @@
 require("lazy").setup({
-    {
+    { -- theme
         "neanias/everforest-nvim",
         name = "everforest",
         version = false,
@@ -7,12 +7,13 @@ require("lazy").setup({
         priority = 1000,
     },
     {
-        "jose-elias-alvarez/null-ls.nvim",
+        "nvimtools/none-ls.nvim",
     },
     {
         "nvim-telescope/telescope.nvim", tag = "0.1.5",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
+    -- LSP
     { "VonHeikemen/lsp-zero.nvim", branch = "v3.x"},
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",

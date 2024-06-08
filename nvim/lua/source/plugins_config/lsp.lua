@@ -31,9 +31,7 @@ require('lspconfig').pylsp.setup({
         python = {
             pythonPath="/usr/bin/python3"
         },
-        pylsp = {}
     }
-
 })
 
 -- SNIPPETS
