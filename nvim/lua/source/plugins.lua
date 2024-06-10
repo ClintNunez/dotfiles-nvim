@@ -1,4 +1,9 @@
 require("lazy").setup({
+    -- Github
+    {
+
+    },
+    "lewis6991/gitsigns.nvim",
     { -- theme
         "neanias/everforest-nvim",
         name = "everforest",
@@ -12,6 +17,32 @@ require("lazy").setup({
         build = ":TSUpdate",
     },
     "norcalli/nvim-colorizer.lua",
+    {
+        "folke/todo-comments.nvim",
+        lazy = false,
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {
+            keywords = {
+                HACK = { icon = " ", color = "hack" },
+                PERF = { icon = " ", color = "perf", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
+            },
+            highlight = {
+                pattern = [[.*<(KEYWORDS)\s*]],
+            },
+            search = {
+                pattern = [[\b(KEYWORDS)\b]],
+            },
+            colors = {
+                error = { "#E67E80" },
+                warning = { "#DBBC7F" },
+                hack = { "#E69875" },
+                info = { "#7FBBB3" },
+                hint = { "#A7C080" },
+                test = { "#D699B6" },
+                perf = { "#9DA9A0" }
+            }
+        },
+    },
 
     {-- fuzzyfinder
         "nvim-telescope/telescope.nvim", tag = "0.1.5",
@@ -52,12 +83,7 @@ require("lazy").setup({
         "kylechui/nvim-surround",
         version = "*", -- Use for stability; omit to use `main` branch for the latest features
         event = "VeryLazy",
-        config = function()
-            require("nvim-surround").setup({
-                -- Configuration here, or leave empty to use defaults
-            })
-        end
-    }
+    },
 })
 
 require("luasnip.loaders.from_vscode").lazy_load()
