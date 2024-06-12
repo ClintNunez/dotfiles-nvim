@@ -11,13 +11,6 @@ vim.keymap.set("n", "<", "<C-x>")
 -- Select all
 vim.keymap.set("n", "<C-a>", "gg<S-v>G")
 
--- New tab (bufferline)
-vim.keymap.set("n", "<S-t>", ":tabedit")
-
--- Switching tabs (bufferline)
-vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
-vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
-
 -- Split window
 vim.keymap.set("n", "sh", ":split<Return><C-w>w")
 vim.keymap.set("n", "sv", ":vsplit<Return><C-w>w")
@@ -60,3 +53,44 @@ vim.keymap.set("n", "Q", "<nop>")
 
 -- Replaces all occurences of the word that the cursor is on
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- KEYMAPS FOR PLUGINS --
+
+-- BUFFERLINE
+-- New tab
+vim.keymap.set("n", "<S-t>", ":tabedit")
+
+-- Switching tabs
+vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
+vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
+
+-- todoCOMMENTS
+-- jump to next todo comment
+vim.keymap.set("n", "]t", function()
+  require("todo-comments").jump_next({
+        keywords = {
+            "TODO",
+            "FIX",
+            "WARNING",
+            "PERF",
+            "HACK",
+            "NOTE",
+        }})
+end, { desc = "Next error/warning todo comment" })
+
+-- jump to prev todo comment
+vim.keymap.set("n", "[t", function()
+  require("todo-comments").jump_prev({
+        keywords = {
+            "TODO",
+            "FIX",
+            "WARNING",
+            "PERF",
+            "HACK",
+            "NOTE",
+        }})
+end, { desc = "Next error/warning todo comment" })
+
+-- Todo features
+vim.keymap.set("n", "tdqf", ":TodoQuickFix")
+vim.keymap.set("n", "tdt", ":TodoTelescope")
