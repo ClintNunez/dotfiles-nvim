@@ -94,3 +94,7 @@ end, { desc = "Next error/warning todo comment" })
 -- Todo features
 vim.keymap.set("n", "tdqf", ":TodoQuickFix")
 vim.keymap.set("n", "tdt", ":TodoTelescope")
+
+-- NEOGIT
+-- shortcuts 
+vim.keymap.set("n", "<leader>ng", ":Neogit")
