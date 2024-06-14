@@ -28,6 +28,7 @@ require("lazy").setup({
     },
     "nvimtools/none-ls.nvim",
 
+
     { -- tabs
         "akinsho/bufferline.nvim",
         version = "*",
@@ -88,6 +89,7 @@ require("lazy").setup({
         version = "*", -- Use for stability; omit to use `main` branch for the latest features
         event = "VeryLazy",
     },
+    "mbbill/undotree", -- undotree
 })
 
 require("luasnip.loaders.from_vscode").lazy_load()
