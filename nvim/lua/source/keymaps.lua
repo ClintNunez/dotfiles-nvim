@@ -98,3 +98,7 @@ vim.keymap.set("n", "tdt", ":TodoTelescope")
 -- NEOGIT
 -- shortcuts 
 vim.keymap.set("n", "<leader>ng", ":Neogit")
+
+-- UNDOTREE
+vim.keymap.set("n", "<leader>UT", vim.cmd.UndotreeToggle)
+vim.keymap.set("n", "<leader>UH", vim.cmd.UndotreeHide)
