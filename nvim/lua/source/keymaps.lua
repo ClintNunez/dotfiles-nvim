@@ -22,10 +22,10 @@ vim.keymap.set("", "wj", "<C-w>j")
 vim.keymap.set("", "wl", "<C-w>l")
 
 -- Resize window
-vim.keymap.set("n", "rh", "<C-w><")
-vim.keymap.set("n", "rl", "<C-w>>")
-vim.keymap.set("n", "rk", "<C-w>+")
-vim.keymap.set("n", "rj", "<C-w>-")
+vim.keymap.set("n", "wrh", "<C-w><")
+vim.keymap.set("n", "wrl", "<C-w>>")
+vim.keymap.set("n", "wrk", "<C-w>+")
+vim.keymap.set("n", "wrj", "<C-w>-")
 
 -- Moves blocks of code in Visual Mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
